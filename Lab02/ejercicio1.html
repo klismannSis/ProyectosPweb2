@@ -4,11 +4,45 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ejercicio 1</title>
+        <title>Primer Ejercicio</title>
 
 	</head>
 	<body>
-	     <h1>JavaScript Dates</h1>
-	     <button onclick="actualDate()">Obtener día de la semana actual</button>
-	     <p id="demo"></p>
+        <h1>JavaScript Dates</h1>
+        <button onclick="actualDate()">Adquirir el </button>
+        <p id="demo"></p>
+
+        <script>
+        let day;
+        switch (new Date().getDay()){
+        case 0:
+            day = "Lunes";
+            break;
+        case 1:
+            day = "Martes";
+            break;
+        case 2:
+            day = "Miercoles";
+            break;
+        case 3:
+            day = "Jueves";
+            break;
+        case 4:
+            day = "Viernes";
+            break;
+        case 5:
+            day = "Sabado";
+            break;
+        case 6:
+            day = "Domingo";
+            }
+        document.getElementById("demo").innerHTML = "El dia actual es:"+ day;
+</script>
+
+</body>
+</html>
+
+        
+            
+            
 
