@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EJERCICIO 02</title>
+    <title>Segundo Ejercicio</title>
 </head>
     <body>
+	    <h1>Esta pagina recibe un texto y devuelve el mismo, pero invertido.</h1><br>
+	 <button onclick="invertir()"> Ingrese el texto a invertir :)</button>
+	 <br>
+	 <p id="TextoIngresado"></p> <p id="TextoInvertido"></p>
+	 <script>
+            function invertir(){
+                Texto=prompt("Ingrese el texto");
+                Invertida="";
+                for(k=palabra.length -1 ; k>=0;k--){
+                    Invertida = Invertida + Texto.charAt(k);
+                }
+            document.getElementById("TextoIngresado").innerHTML="Texto Ingresado: "+ Texto;
+            document.getElementById("TextoInvertido").innerHTML="Texto invertido: "+ Invertida;
+            }
+        </script>
+    </body>
+</html>
+
