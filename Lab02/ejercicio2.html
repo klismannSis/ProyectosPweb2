@@ -7,7 +7,7 @@
     <title>Segundo Ejercicio</title>
 </head>
     <body>
-	    <h1>Esta pagina recibe un texto y devuelve el mismo, pero invertido.</h1><br>
+	 <h1>Esta pagina recibe un texto y devuelve el mismo, pero invertido.</h1><br>
 	 <button onclick="invertir()"> Ingrese el texto a invertir :)</button>
 	 <br>
 	 <p id="TextoIngresado"></p> <p id="TextoInvertido"></p>
@@ -15,7 +15,7 @@
             function invertir(){
                 Texto=prompt("Ingrese el texto");
                 Invertida="";
-                for(k=palabra.length -1 ; k>=0;k--){
+                for(k=Texto.length -1 ; k>=0;k--){
                     Invertida = Invertida + Texto.charAt(k);
                 }
             document.getElementById("TextoIngresado").innerHTML="Texto Ingresado: "+ Texto;
