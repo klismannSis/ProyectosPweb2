@@ -8,14 +8,16 @@
 </head>
     <body>
 	 <h1>Esta pagina recibe un texto y devuelve el mismo, pero invertido.</h1><br>
-	 <button onclick="invertir()"> Click para ingresar texto :)</button>
-	 <br>
-	 <p id="TextoIngresado"></p> <p id="TextoInvertido"></p>
-	 <script>
-            function invertir(){
-                Texto=prompt("Ingrese el texto");
+	 <button onclick="invertir()"> Click para ingresar texto :)</button> //Creamos un boton para poder ingresar un texto.
+	 <br> //Espaciador 
+	 <p id="TextoIngresado"></p> <p id="TextoInvertido"></p> //Identificamos nuestro elemento vinculado.
+
+	 // Se devolvera una salida, en este caso nuestro texto ingresado.
+	 <script> 
+            function invertir(){ 
+                Texto=prompt("Ingrese el texto"); 
                 Invertida="";
-                for(k=Texto.length -1 ; k>=0;k--){
+                for(k=Texto.length -1 ; k>=0;k--){ 
                     Invertida = Invertida + Texto.charAt(k);
                 }
             document.getElementById("TextoIngresado").innerHTML="Texto Ingresado: "+ Texto;
