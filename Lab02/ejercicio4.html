@@ -10,6 +10,7 @@
 
     <!--Comenzando con los codigos js-->
   <script>
+
     function obtenerCodigoSesion() {
       var url = document.getElementById("url").value;
 
@@ -21,8 +22,33 @@
         
         // Mostrar el código de sesión en el elemento de salida
         document.getElementById("codigoSesion").textContent = codigo;
-      } else {
+      } else 
+	{
         alert("Lo sentimos URl no admitido, ingrese una URL valida.");
       }
     }   
   </script>
+
+</head>
+<body>
+
+    <div class="container"> 
+        <div class="ring"> </div>
+        <div class="ring"> </div>
+        <div class="ring"> </div>
+        
+    </div>
+
+<center>
+
+  <h1>Cuarto Ejercicio</h1>
+  <h2>Página que recibe el URL de la sesión de google meet y devuelve el código de la sesión sin guiones separadores</h2>
+  <label for="url">URL de la clase aqui --> </label>
+  <input type="text" id="url">
+  <button onclick="obtenerCodigoSesion()">Adquirir Codigo</button>
+  <br><br>
+  <h2>Código de sesión:</h2>
+  <p id="codigoSesion"></p>
+
+</center>
+
