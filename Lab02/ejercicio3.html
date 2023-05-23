@@ -4,22 +4,28 @@
 		<title>Tercer Ejercicio</title>
 		<link rel="stylesheet" href="Detalle.css">
 
+
 	</head>
 		<body>
 			<div class="container"> 
 				<div class="ring"> </div>
 				<div class="ring"> </div>
 				<div class="ring"> </div>
-				<p>Esta pagina cuenta exactamente cuantos dias falta para el dia de Arequipa</p>
+				
 			</div>
-			<p id="Dia_de_Arequipa"></p>
-			<p id="Dias_Sobrantes"></p>
+
+			<h2>Esta pagina muestra exactamente cuantos dias falta para el dia de Arequipa</h2>
+    			<h4>Dia actual que estamos: <p id="demo2"></p></h4>
+  		  	<h3>Tiempo restante: <p id="demo"></p></h3>
+
 			<script>
-				let DiadeArequipa = new Date('2023-08-15');
-				let diaActual = new Date();
-				var sobrante = Math.floor((Dia_de_Arequipa - diaActual)/(1000*60*60*24));
-				document.getElementById("Dia_de_Arequipa").innerHTML="Dia de Arequipa "+DiadeArequipa;						
-                		document.getElementById("Dias_Sobrantes").innerHTML="Dias Sobrantes: "+sobrante;
+				
+				 let Dia_Actual = new Date();
+        		document.getElementById("demo2").innerHTML = Dia_Actual;
+        		let Dia_de_Arequipa = new Date(2023, 07, 15);
+        		let Faltante = Dia_de_Arequipa.getTime() - Dia_Actual.getTime();
+        		let Dias = Math.ceil(Faltante/(1000 * 3600 * 24));
+        		document.getElementById("demo").innerText = Dias + " días para disfrutar de la gran fiesta.";
 			</script>
 		</body>
 
