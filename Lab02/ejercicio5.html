@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de suma de tabla</title>
+  <script>
+    function crearTabla() {
+      var numValores = parseInt(document.getElementById("numValores").value);
+      var tabla = document.getElementById("tabla");
+      tabla.innerHTML = ""; // Limpiar tabla existente
+      
+      // Crear filas y celdas de la tabla
+      for (var i = 0; i < numValores; i++) {
+        tabla.innerHTML += "<tr><td>Valor " + (i + 1) + ":</td><td><input type='number' class='valor'></td></tr>";
+      }
+      
+      
+      document.getElementById("calcularSuma").style.display = "block";
+    }
+
+    
