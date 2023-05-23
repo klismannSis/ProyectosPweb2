@@ -29,4 +29,24 @@
       document.getElementById("resultado").textContent = "La suma es: " + suma;
     }
   </script>
-    
+    </head>
+<body>
+  <h1>Calculadora de suma de tabla</h1>
+  
+  <form onsubmit="event.preventDefault(); crearTabla()">
+    <label for="numValores">Número de valores:</label>
+    <input type="number" id="numValores" min="1" required>
+    <button type="submit">Crear tabla</button>
+  </form>
+  
+  <br>
+  
+  <table id="tabla">
+    <!-- La tabla se creará dinámicamente... -->
+  </table>
+  
+  <button id="calcularSuma" style="display: none;" onclick="calcularSuma()">Calcular suma</button>
+  
+  <h2 id="resultado"></h2>
+</body>
+</html>
