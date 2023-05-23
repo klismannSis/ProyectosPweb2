@@ -6,9 +6,9 @@
     function crearTabla() {
       var numValores = parseInt(document.getElementById("numValores").value);
       var tabla = document.getElementById("tabla");
-      tabla.innerHTML = ""; // Limpiar tabla existente
+      tabla.innerHTML = ""; 
       
-      // Crear filas y celdas de la tabla
+      
       for (var i = 0; i < numValores; i++) {
         tabla.innerHTML += "<tr><td>Valor " + (i + 1) + ":</td><td><input type='number' class='valor'></td></tr>";
       }
@@ -16,5 +16,17 @@
       
       document.getElementById("calcularSuma").style.display = "block";
     }
-
+	function calcularSuma() {
+      var valores = document.getElementsByClassName("valor");
+      var suma = 0;
+      
+      
+      for (var i = 0; i < valores.length; i++) {
+        suma += parseInt(valores[i].value);
+      }
+      
+      
+      document.getElementById("resultado").textContent = "La suma es: " + suma;
+    }
+  </script>
     
