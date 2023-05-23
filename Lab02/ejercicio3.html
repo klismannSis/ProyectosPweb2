@@ -12,6 +12,15 @@
 				<div class="ring"> </div>
 				<p>Esta pagina cuenta exactamente cuantos dias falta para el dia de Arequipa</p>
 			</div>
+			<p id="Dia_de_Arequipa"></p>
+			<p id="Dias_Sobrantes"></p>
+			<script>
+				let DiadeArequipa = new Date('2023-08-15');
+				let diaActual = new Date();
+				var sobrante = Math.floor((Dia_de_Arequipa - diaActual)/(1000*60*60*24));
+				document.getElementById("Dia_de_Arequipa").innerHTML="Dia de Arequipa "+DiadeArequipa;						
+                		document.getElementById("Dias_Sobrantes").innerHTML="Dias Sobrantes: "+sobrante;
+			</script>
 		</body>
 
 
