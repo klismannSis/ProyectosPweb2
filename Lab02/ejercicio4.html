@@ -14,4 +14,15 @@
       var url = document.getElementById("url").value;
 
 
-      if (url.includes("meet.google.com")) {// Aqui podemos verificar si nuestro URL ingresado es valido o no. 
+      if (url.includes("meet.google.com")) {// Aqui podemos verificar si nuestro URL ingresado es valido o no.
+
+	var codigo = url.split("/").pop();
+        codigo = codigo.replace(/-/g, ""); // En esta parte se realiza la accion de elimianar guiones separados.
+        
+        // Mostrar el código de sesión en el elemento de salida
+        document.getElementById("codigoSesion").textContent = codigo;
+      } else {
+        alert("Lo sentimos URl no admitido, ingrese una URL valida.");
+      }
+    }   
+  </script>
