@@ -38,10 +38,9 @@
 <td>FECHA INICIO::</td><td>25-Abr-2022</td><td>FECHA FIN:</td><td>29-Abr-2022</td><td>DURACIÓN:</td><td>04 horas</td>
 </tr>
 <tr><td colspan="6">INTEGRANTES:
-   <lu>
-        <li>Klismann Chancuaña Alvis</li>
-      
-    </lu>
+   <ul>
+        <li>Klismann Chancuaña Alvis</li> 
+   </ul>
 </td>
 </<tr>
 <tr><td colspan="6">DOCENTE:
