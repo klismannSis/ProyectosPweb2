@@ -1,4 +1,4 @@
-import pygame, sys
+import pygame, sys 
 from pygame.locals import *
 from colors import *
 
@@ -16,7 +16,7 @@ def draw(picture):
   pygame.init()
 
   DISPLAY=pygame.display.set_mode((640, 480))
-  DISPLAY.fill("BLUE")
+  DISPLAY.fill(BLUE)
 
   n = len(img)
   for i in range(0, n):
@@ -24,7 +24,7 @@ def draw(picture):
 
   while True:
     for event in pygame.event.get():
-      if event.type=="QUIT":
+      if event.type==QUIT:
         pygame.quit()
         #sys.exit()
     pygame.display.update()
