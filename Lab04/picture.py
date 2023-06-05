@@ -1,4 +1,4 @@
-from colors import *
+from colors import *.
 class Picture:
   def __init__(self, img):
     self.img = img;
@@ -16,23 +16,34 @@ class Picture:
     vertical = []
     for value in self.img:
     	vertical.append(value[::-1])
-    return vertical
-
+    return Picture(vertical) """Se agrego Picture..."""
+"""__________________________________________________________"""
   def horizontalMirror(self):
     """ Devuelve el espejo horizontal de la imagen """
-    return Picture(None)
+    horizontal = []
+    for row in self.img: """Se implemento for...."""
+      horizontal.insert(0, row)
+    return Picture(horizontal)
 
   def negative(self):
     """ Devuelve un negativo de la imagen """
-    return Picture(None)
+    negative = [
+      ''.join(self._invColor(char) for char in value)
+      for value self.img
+    ]
+    return Picture(negative)
 
   def join(self, p):
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
-    return Picture(None)
+    join = []
+    for i in range(len(self.img)):
+      join.append(self.img[i] + "" + p.img[i])  """Completando  el codigo..."""
+    return Picture(join)
 
-  def up(self, p):
-    return Picture(None)
+  def up(self, p):             """Completo..."""
+    image = self.img + p.img 
+    return Picture(image)
 
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
