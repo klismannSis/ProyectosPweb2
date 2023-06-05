@@ -52,7 +52,7 @@ class Picture:
     for i in range(len(self.img)):
       line = ""
       for j in range(self.img[i]):
-        if p.img[i][j] != " ":
+        if p.img[i][j] != " ":  """Completando..."""
           line + = p,img[i][j]
         else:
           line + = self.img[i][j]
@@ -62,10 +62,14 @@ class Picture:
   def horizontalRepeat(self, n):
     """ Devuelve una nueva figura repitiendo la figura actual al costado
         la cantidad de veces que indique el valor de n """
-    return Picture(None)
+    image = []
+    for i in range(0,len(self.img)):
+        image.append(self.img[i] * n)
+    return Picture(image)
 
   def verticalRepeat(self, n):
-    return Picture(None)
+    image = self.img * n
+    return Picture(image)
 
   #Extra: Sólo para realmente viciosos 
   def rotate(self):
