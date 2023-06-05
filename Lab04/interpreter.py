@@ -1,4 +1,4 @@
-import pygame, sys 
+import pygame, sys
 from pygame.locals import *
 from colors import *
 
@@ -28,3 +28,4 @@ def draw(picture):
         pygame.quit()
         #sys.exit()
     pygame.display.update()
+
