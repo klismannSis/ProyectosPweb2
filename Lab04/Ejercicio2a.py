@@ -1,9 +1,10 @@
 from interpreter import draw
 from chessPictures import *
 
-caballo1 = knight.negative()
-line1 = knight.join(caballo1)
+knight_negative = knight.negative()
+line1 = "".join([knight, knight_negative])
 
-line2 = caballo1.join(knight)
+line2 = "".join([knight_negative, knight])
 final = line1.up(line2)
+
 draw(final)
