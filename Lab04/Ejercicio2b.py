@@ -1,13 +1,11 @@
 from interpreter import draw
 from chessPictures import *
 
-caballo = Picture(...)  # Aquí se proporcionar la imagen adecuada
+# Obtener la representación negativa del knight
+knightN = knight.negative()
+line1 = knight.join(knightN)
+knightN2 = knightN.verticalMirror() # Obtener la versión espejada verticalmente de knightN
+line2 = knight.verticalMirror().join(knightN2)
+final = line1.up(line2)
 
-caballo1 = caballo .negative()# Obtenemos la imagen negativa de 'caballo'
-line1 = caballo .join(caballo1)
-
-caballo2 = caballo1.verticalMirror()# Se obtener el reflejo vertical de 'caballo1'
-line2 = caballo2 .join(caballo .verticalMirror())
-
-final = line1.up(line2) # Combinar verticalmente 'line1' y 'line2'
 draw(final)
