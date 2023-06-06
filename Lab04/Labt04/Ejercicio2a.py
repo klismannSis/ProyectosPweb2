@@ -8,3 +8,7 @@ line2 = "".join([knight_negative, knight])
 final = line1.up(line2)
 
 draw(final)
+
+
+
+

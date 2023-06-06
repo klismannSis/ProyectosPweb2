@@ -13,3 +13,5 @@ concatenated_image = image_repeated.join(image_repeated_negative)
 final_image = concatenated_image.horizontalRepeat(4)
 
 draw(final_image)
+
+

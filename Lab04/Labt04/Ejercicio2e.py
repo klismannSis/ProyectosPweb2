@@ -7,3 +7,5 @@ concatenated = square_negative.join(square)
 repeated = concatenated.horizontalRepeat(4)  # Repetir horizontalmente el patrón cuatro veces
 
 draw(repeated)
+
+

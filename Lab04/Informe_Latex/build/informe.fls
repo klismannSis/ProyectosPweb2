@@ -1,0 +1,4 @@
+PWD c:\tee\ProyectosPweb2\Lab04\Informe_Latex
+INPUT C:\Users\Klismann\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\tee\ProyectosPweb2\Lab04\Informe_Latex\informe.tex
+OUTPUT c:\tee\ProyectosPweb2\Lab04\Informe_Latex\build\informe.log

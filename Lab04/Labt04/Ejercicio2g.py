@@ -57,3 +57,5 @@ fila4 = rockSquareN.join(knightSquare).join(bishopSquareN).join(queenSquare).joi
 # Dibujar el tablero
 tablero = fila1.up(fila2).up(centro).up(fila3).up(fila4)
 draw(tablero)
+
+
