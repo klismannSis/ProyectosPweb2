@@ -1,1 +1,1 @@
-# El informe se encuentra en codigo Latex y formato PDF.
+# El informe se encuentra en codigo Latex y formato PDF(latex).
