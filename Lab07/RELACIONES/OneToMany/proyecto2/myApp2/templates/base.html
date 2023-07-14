@@ -1,0 +1,8 @@
+<h1>{{ autor.nombre }}</h1>
+
+<h2>Libros:</h2>
+<ul>
+    {% for libro in libros %}
+        <li>{{ libro.titulo }}</li>
+    {% endfor %}
+</ul>
